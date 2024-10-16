@@ -1,0 +1,283 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    scroll-behavior: smooth;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #d32f2f;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b;
+}
+
+/* Section Styles */
+.section {
+    padding: 20px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    max-width: 1200px; /* Limit section width */
+}
+
+.section:hover {
+    transform: scale(1.02);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #d32f2f;
+}
+
+p, blockquote {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+blockquote {
+    font-style: italic;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-left: 5px solid #d32f2f;
+}
+
+/* Images */
+.img-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.athlete-photo {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.athlete-flag {
+    width: 150px;
+    height: auto;
+}
+
+/* About Content */
+.about-content {
+    display: flex;
+    align-items: center; /* Center align items vertically */
+    justify-content: center; /* Center content horizontally */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    margin: 20px;
+}
+
+.about-content img {
+    max-width: 300px; /* Set a max width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px; /* Add space between the image and text */
+}
+
+.about-content p {
+    max-width: 600px; /* Set a max width for the text */
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    text-align: left; /* Align text to the left */
+}
+
+.about-content p span {
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+/* Cards for Reviews */
+.reviews-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.card {
+    background-color: #e7e7e7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card h3 {
+    color: #d32f2f;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+thead {
+    background-color: #d32f2f;
+    color: white;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Scroll Links */
+.scroll-link {
+    display: block;
+    text-align: right;
+    margin: 10px;
+    font-size: 14px;
+    color: #d32f2f;
+}
+
+.scroll-link:hover {
+    text-decoration: underline;
+}
+
+/* Contact Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #d32f2f;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #d32f2f;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #b71c1c;
+}
+
+/* Image with Text on About Page */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.about-content img {
+    max-width: 300px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.about-content p {
+    max-width: 600px;
+    text-align: justify;
+}
+
+
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 800px) {
+    .img-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .athlete-photo, .athlete-flag {
+        margin: 10px 0;
+        width: 80%;
+    }
+
+    .reviews-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
